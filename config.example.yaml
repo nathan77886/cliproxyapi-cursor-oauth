@@ -1,0 +1,27 @@
+# Merge the plugins block into your CLIProxyAPI v8 configuration.
+# This file contains placeholders only; never commit real keys.
+config-version: 8
+server:
+  host: "127.0.0.1"
+  port: 8317
+access:
+  api-keys:
+    - "replace-with-your-inbound-key"
+management:
+  secret-key: "replace-with-your-management-key"
+oauth:
+  auth-dir: "/absolute/path/to/auths"
+plugins:
+  enabled: true
+  dir: "/absolute/path/to/plugins"
+  store-sources:
+    - "https://raw.githubusercontent.com/nathan77886/cliproxyapi-cursor-oauth/main/registry.json"
+  configs:
+    auth-cursor-oauth:
+      enabled: true
+      bridge-path: "" # empty downloads the pinned, checksummed SDK bridge
+      proxy-url: "" # explicitly set the proxy for login and Cursor model traffic
+      optimize-for: "balanced"
+      weights: {}
+# After installation, open the management OAuth page and select Cursor.
+# The host stores the browser-generated API key as type "cursor" in oauth.auth-dir.

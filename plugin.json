@@ -1,0 +1,11 @@
+{
+  "id": "auth-cursor-oauth",
+  "name": "Cursor Browser Login",
+  "description": "Browser sign-in and automatic expiring API key creation for Cursor, with SDK Bridge model access.",
+  "author": "nathan77886",
+  "license": "MIT",
+  "tags": [
+    "provider",
+    "oauth"
+  ]
+}

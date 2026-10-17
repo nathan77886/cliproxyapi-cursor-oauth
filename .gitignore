@@ -1,0 +1,7 @@
+/dist/
+/auths/
+/logs/
+/config.yaml
+.env
+*.test
+coverage.out

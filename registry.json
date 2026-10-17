@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "plugins": [
+    {
+      "id": "auth-cursor-oauth",
+      "name": "Cursor Browser Login",
+      "description": "Browser sign-in and automatic expiring API key creation for Cursor. Linux amd64, GLIBC 2.34+.",
+      "author": "nathan77886",
+      "version": "0.1.0",
+      "repository": "https://github.com/nathan77886/cliproxyapi-cursor-oauth",
+      "homepage": "https://github.com/nathan77886/cliproxyapi-cursor-oauth",
+      "license": "MIT",
+      "tags": [
+        "provider",
+        "oauth"
+      ],
+      "install": {
+        "type": "direct",
+        "artifacts": [
+          {
+            "goos": "linux",
+            "goarch": "amd64",
+            "url": "https://github.com/nathan77886/cliproxyapi-cursor-oauth/releases/download/v0.1.0/auth-cursor-oauth_0.1.0_linux_amd64.zip",
+            "sha256": "30e9eecd23b3584202feb4e584ca54d9ab75a746137d2d8a5b7f5ed967979fe7",
+            "size": 7992703
+          }
+        ]
+      }
+    }
+  ]
+}
